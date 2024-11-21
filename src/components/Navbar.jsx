@@ -4,6 +4,7 @@ const Navbar = () => {
 	const [scrolling, setScrolling] = useState(false)
 	const { t, i18n } = useTranslation()
 	const langOption = localStorage.getItem('i18nextLng')
+
 	const handleChange = event => {
 		const selectedLanguage = event?.target?.value
 		i18n.changeLanguage(selectedLanguage)
@@ -40,30 +41,20 @@ const Navbar = () => {
 					</a>
 					<div className='header_right_box flex justify-between items-center'>
 						<div className='header_right_navigations flex justify-between items-center'>
-							<a
-								href='#main'
-								className='mr-[25px] text-[20px] font-medium text-[#00000098] border-b-2 border-transparent pb-1  hover:text-zinc-950 hover:border-b-2 hover:border-black pb-1 transition-all duration-300 ease-in-out'
-							>
-								{t('Асосий')}
-							</a>
-							<a
-								href='#about'
-								className='mr-[25px] text-[20px] font-medium text-[#00000098] border-b-2 border-transparent pb-1  hover:text-zinc-950 hover:border-b-2 hover:border-black pb-1 transition-all duration-300 ease-in-out'
-							>
-								{t('Биз-ҳақимизда')}
-							</a>
-							<a
-								href='#serv'
-								className='mr-[25px] text-[20px] font-medium text-[#00000098] border-b-2 border-transparent pb-1  hover:text-zinc-950 hover:border-b-2 hover:border-black pb-1 transition-all duration-300 ease-in-out'
-							>
-								{t('Хизматлар')}
-							</a>
-							<a
-								href='#faq'
-								className='mr-[25px] text-[20px] font-medium text-[#00000098] border-b-2 border-transparent pb-1  hover:text-zinc-950 hover:border-b-2 hover:border-black pb-1 transition-all duration-300 ease-in-out'
-							>
-								{t('ФАҚ')}
-							</a>
+							{[
+								{ href: '#main', text: t('Асосий') },
+								{ href: '#about', text: t('Биз-ҳақимизда') },
+								{ href: '#serv', text: t('Хизматлар') },
+								{ href: '#faq', text: t('ФАҚ') },
+							].map((item, index) => (
+								<a
+									key={index}
+									href={item.href}
+									className='mr-[25px] text-[20px] font-medium text-[#00000098] border-b-2 border-transparent pb-1 hover:text-zinc-950 hover:border-b-2 hover:border-black transition-all duration-300 ease-in-out'
+								>
+									{item.text}
+								</a>
+							))}
 						</div>
 						<div className='header_lang_and_header_btn flex justify-between items-center'>
 							<div className='header_custom_dropdown '>
