@@ -26,11 +26,11 @@ const Navbar = () => {
 	}, [])
 	return (
 		<header
-			className={`fixed top-0 left-0 w-full bg-white p-4 transition-shadow duration-300 ${
+			className={`fixed z-50 border-solid border-red-400 border-2 top-0 left-0 mb-[100px] w-full bg-white p-4 transition-shadow duration-300 ${
 				scrolling ? 'shadow-lg' : ''
 			}`}
 		>
-			<div className='container max-width: 1560px;  px-[15px] mx-auto'>
+			<div className='container max-w-[1560px]  px-[15px] mx-auto'>
 				<div className='header_flex flex justify-between items-center'>
 					<a className='header_logo_link' href='#main'>
 						<img
@@ -42,10 +42,10 @@ const Navbar = () => {
 					<div className='header_right_box flex justify-between items-center'>
 						<div className='header_right_navigations flex justify-between items-center'>
 							{[
-								{ href: '#main', text: t('Асосий') },
-								{ href: '#about', text: t('Биз-ҳақимизда') },
-								{ href: '#serv', text: t('Хизматлар') },
-								{ href: '#faq', text: t('ФАҚ') },
+								{ href: '#main', text: t('asosiy') },
+								{ href: '#about', text: t('biz-haqimizda') },
+								{ href: '#serv', text: t('xizmatlar') },
+								{ href: '#faq', text: t('faq') },
 							].map((item, index) => (
 								<a
 									key={index}
@@ -71,14 +71,11 @@ const Navbar = () => {
 									<option value='uz' className='lang_options font-[700]'>
 										Ўзбекча
 									</option>
-									<option value='en' className='lang_options font-[700]'>
-										Английский
-									</option>
 								</select>
 							</div>
 							<a href='#contact' className='header_btn_link'>
 								<button className='header_btn w-[200px] h-[60px] rounded-[25px] bg-blue-700 text-[#fff] px-[10px] ml-[50px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out'>
-									{t('Богланиш')}
+									{t('boglanish')}
 								</button>
 							</a>
 						</div>
