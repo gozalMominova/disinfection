@@ -5,16 +5,17 @@
 body {
 	@apply font-unbounded;
 }
+/* About boshlandi---------------------------------------- */
 .about_top_card {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	border-top: 1px solid #ccc;
-  padding: 20px 0;
+	padding: 20px 0;
 }
 .about_card {
-	border: 1px solid red;
 	width: 400px;
+	margin-bottom: 140px;
 }
 .about_top_title {
 	font-size: 40px;
@@ -28,12 +29,14 @@ body {
 	color: #020c31;
 	line-height: 32px;
 	margin-bottom: 20px;
+	width: 300px;
 }
 .about_card p {
 	width: 300px;
 	color: #676d83;
 	font-size: 16px;
 	font-weight: 400;
+	font-family: sans-serif;
 	line-height: 24px;
 	margin-bottom: 20px;
 }
@@ -41,5 +44,334 @@ body {
 .about_card svg {
 	color: blue;
 	margin-bottom: 20px;
-	font-size: 80px;
+	font-size: 65px;
+}
+.about_bottom {
+	width: 1520px;
+	height: 600px;
+	background-image: url(https://www.dezinfeksiyatashkent.uz/assets/hh-32dbdc9d.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.about_bottom_wrap {
+	width: 558px;
+	/* border: 1px solid yellow; */
+	margin-left: 820px;
+	padding-top: 140px;
+}
+.about_bottom_rgb {
+	background-color: rgba(0, 0, 0, 0.486);
+	width: 1520px;
+	height: 600px;
+	border-radius: 20px;
+	margin-top: -122px;
+}
+.about_bottom h1 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 48px;
+	margin-bottom: 20px;
+	color: #fafafa;
+}
+.about_bottom_wrap p {
+	color: #fafafa;
+	font-size: 16px;
+	font-weight: 400;
+	width: 450px;
+}
+/* serves boshlandi-------------------------------------------------- */
+.serves_title {
+	color: #020c31;
+	font-size: 52px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+.serves_info {
+	color: #666;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: sans-serif;
+	max-width: 335px;
+	margin-bottom: 30px;
+}
+.serves_card {
+	border: 2.3px solid #020c315d;
+	padding: 20px 10px;
+	display: flex;
+	align-items: center;
+	width: 1520px;
+	height: 345px;
+	border-radius: 20px;
+	gap: 100px;
+	margin-bottom: 30px;
+}
+.serves_card:hover {
+	box-shadow: 0 0 10px grey;
+	transform: scale(1.01);
+	transition: transform 0.3s ease;
+}
+.serves_card img {
+	width: 300px;
+	height: 300px;
+	margin-left: 40px;
+}
+
+.serves_card_title {
+	width: 800px;
+	color: #020c31;
+	font-size: 26px;
+	font-weight: 700;
+	padding: 10px 0;
+}
+.serves_card_info {
+	width: 950px;
+	color: #495157;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/* serves_type  boshlandi---------------------------------- */
+.serves_type_cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+.serves_type_title {
+	font-size: 52px;
+	color: #020c31;
+	font-weight: 700;
+	line-height: 64px;
+	margin-bottom: 30px;
+}
+.serves_type_card {
+	max-width: 443px;
+	height: 450px;
+	border-radius: 12px;
+	margin-right: 16px;
+	margin-top: 16px;
+	background-color: #f3f6f6;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 0 2px;
+}
+.serves_type_card:hover {
+	box-shadow: 0 0 10px grey;
+	transform: scale(1.01);
+	transition: transform 0.3s ease;
+}
+
+.type_card_name {
+	color: #020c31;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-top: 8px;
+}
+.type_card_info {
+	color: #495157;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	margin-top: 20px;
+}
+.type_card_btn {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.serves_type_card img {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	right: 10px;
+	bottom: 10px;
+	z-index: 2;
+}
+.ser_license {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 100px;
+	padding: 25px 50px 60px 50px;
+	border-radius: 16px;
+	background: radial-gradient(
+		498.32% 130.33% at 92.87% 11.25%,
+		#33a9ff 0%,
+		#33fff3 100%
+	);
+	/* justify-content: center; */
+}
+.ser_license_left {
+	width: 528px;
+	height: 510px;
+	border-radius: 40px;
+}
+.ser_license_left img {
+	background-size: 100%;
+	object-fit: cover;
+	border-radius: 16px;
+}
+.ser_license_right {
+	width: 643px;
+}
+.ser_license_right h1 {
+	max-width: 643px;
+	color: #fafafa;
+	font-family: Unbounded;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px;
+	margin-top: 12px;
+	margin-bottom: 50px;
+}
+/* faq_flex boshlandi--------------------- */
+.faq_flex {
+	border-top: 1px solid #ccc;
+	padding: 30px 0;
+}
+.faq_flex h1 {
+	color: #020c31;
+	font-family: Unbounded;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px;
+}
+.faq-accardion {
+	width: 1100px;
+	padding: 15px 10px 35px 0;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.faq-accardion:active {
+	transition: transform all 0.3s ease;
+}
+.faq_acc_title {
+	color: #676d83;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+}
+.faq_acc_info {
+	color: #676d83;
+	font-family: sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+.contact {
+	background: radial-gradient(
+		333.17% 80.94% at 51.32% 69.21%,
+		#3da0fc 0%,
+		rgba(2, 227, 214, 0.2) 100%
+	);
+	border-radius: 12px;
+	height: 550px;
+	align-items: center;
+	position: relative;
+}
+.contact_left {
+	height: 400px;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+.contact_left form {
+	max-width: 456px;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+.contact_title {
+	color: #242825;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+}
+.card_left_input {
+	outline: none;
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: 8px;
+	background: #f2f2f2;
+	padding: 0 20px;
+	color: gray;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 30px;
+	color: #242825;
+}
+.card_left_btn {
+	width: 100%;
+	height: 50px;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	background: #242825;
+	color: #fff;
+	font-family: Unbounded;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	cursor: pointer;
+	margin-top: 50px;
+}
+.contact_right {
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}
+footer {
+	border-top: 1.4px solid rgba(11, 11, 77, 0.5);
+	margin-top: 100px;
+	/* align-items: center; */
+}
+.footer_card {
+	height: 400px;
+	display: flex;
+	gap: 300px;
+}
+.footer_card img {
+	width: 300px;
+	height: 90px;
+}
+.footer_connect {
+	margin-top: 30px;
+}
+.connect {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+.connect_phone {
+	width: 40px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	margin-right: 25px;
+}
+.connect p {
+	color: #242825cc;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }

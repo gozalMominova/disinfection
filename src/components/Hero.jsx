@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import Accordion from './Accardion'
 const Hero = () => {
 	const { t } = useTranslation()
 	useEffect(() => {
@@ -19,6 +20,11 @@ const Hero = () => {
 			window.removeEventListener('scroll', handleScroll)
 		}
 	}, [])
+	const items = [
+		{ title: t('faq-flex.faq-title1'), content: t('faq-flex.faq-info1') },
+		{ title: t('faq-flex.faq-title2'), content: t('faq-flex.faq-info2') },
+		{ title: t('faq-flex.faq-title3'), content: t('faq-flex.faq-info3') },
+	]
 	return (
 		<section className='main_box'>
 			<section className='home border-2 border-red-500 mt-[213px] max-w-[1560px] mx-auto z-1 flex  justify-between items-center px-[15px]'>
@@ -37,10 +43,7 @@ const Hero = () => {
 						src='https://www.dezinfeksiyatashkent.uz/assets/diz-main-ee209cbc.png'
 						alt='home-img2'
 					/>
-					<button
-						data-aos='fade-right'
-						className='w-[200px] h-[60px] mt-[90px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out'
-					>
+					<button className='w-[200px] h-[60px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
 						{t('boglanish')}
 					</button>
 				</div>
@@ -53,7 +56,6 @@ const Hero = () => {
 					/>
 				</div>
 			</section>
-
 			<section className='about  border-2 border-red-500 mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
 				<div className='about_top'>
 					<h1 className='about_top_title'>{t('biz-haqimizda')}</h1>
@@ -113,7 +115,194 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<div className='about-bottom'></div>
+				<div className='about_bottom'>
+					<div className='about_bottom_rgb'>
+						<div className='about_bottom_wrap'>
+							<h1>{t('about.about-bottom-title')}</h1>
+							<p>{t('about.about-bottom-text')}</p>
+							<button className='w-[200px] h-[60px] mt-[90px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className='serves border-2 border-red-500 mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
+				<h1 className='serves_title'>{t('xizmatlar')}</h1>
+				<p className='serves_info'>{t('serves.serves-info')}</p>
+				<div className='serves_card'>
+					<img
+						src='https://www.dezinfeksiyatashkent.uz/assets/dizinfeksiya-52660f2d.png'
+						alt='serves_card_img1'
+					/>
+					<div>
+						<h1 className='serves_card_title'>
+							{t('serves.serves-card-title1')}
+						</h1>
+						<p className='serves_card_info'>{t('serves.serves-card-info1')}</p>
+					</div>
+				</div>
+				<div className='serves_card'>
+					<img
+						src='https://www.dezinfeksiyatashkent.uz/assets/dezinyeksiya-bea8e70f.png'
+						alt='serves_card_img2'
+					/>
+					<div>
+						<h1 className='serves_card_title'>
+							{t('serves.serves-card-title2')}
+						</h1>
+						<p className='serves_card_info'>{t('serves.serves-card-info2')}</p>
+					</div>
+				</div>
+				<div className='serves_card'>
+					<img
+						src='https://www.dezinfeksiyatashkent.uz/assets/derazatsiya-83b522bf.png'
+						alt='serves_card_img3'
+					/>
+					<div>
+						<h1 className='serves_card_title'>
+							{t('serves.serves-card-title3')}
+						</h1>
+						<p className='serves_card_info'>{t('serves.serves-card-info3')}</p>
+					</div>
+				</div>
+			</section>
+			<section className='serves_type serves border-2 border-red-500 mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
+				<h1 className='serves_type_title'>
+					{t('serves-type.serves-type-title')}
+				</h1>
+				<div className='serves_type_cards'>
+					<div className='serves_type_card'>
+						<h1 className='type_card_name'>
+							{t('serves-type.type-card-name1')}
+						</h1>
+						<p className='type_card_info'>{t('serves-type.type-card-info1')}</p>
+						<img
+							src='https://www.dezinfeksiyatashkent.uz/assets/klopi-6c1f42ef.jpg'
+							alt='serves_type_card_img1'
+						/>
+						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</div>
+					<div className='serves_type_card'>
+						<h1 className='type_card_name'>
+							{t('serves-type.type-card-name2')}
+						</h1>
+						<p className='type_card_info'>{t('serves-type.type-card-info2')}</p>
+						<img
+							src='https://www.dezinfeksiyatashkent.uz/assets/tarakan-d8b430bd.jpg'
+							alt='serves_type_card_img2'
+						/>
+						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</div>
+					<div className='serves_type_card'>
+						<h1 className='type_card_name'>
+							{t('serves-type.type-card-name3')}
+						</h1>
+						<p className='type_card_info'>{t('serves-type.type-card-info3')}</p>
+						<img
+							src='https://www.dezinfeksiyatashkent.uz/assets/skarpion-6902a7a9.jpg'
+							alt='serves_type_card_img3'
+						/>
+						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</div>
+					<div className='serves_type_card'>
+						<h1 className='type_card_name'>
+							{t('serves-type.type-card-name4')}
+						</h1>
+						<p className='type_card_info'>{t('serves-type.type-card-info4')}</p>
+						<img
+							src='https://www.dezinfeksiyatashkent.uz/assets/grizuni-de8c9315.jpg'
+							alt='serves_type_card_img4'
+						/>
+						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</div>
+					<div className='serves_type_card'>
+						<h1 className='type_card_name'>
+							{t('serves-type.type-card-name5')}
+						</h1>
+						<p className='type_card_info'>{t('serves-type.type-card-info5')}</p>
+						<img
+							src='	https://www.dezinfeksiyatashkent.uz/assets/bloxi-7e06d020.jpg'
+							alt='serves_type_card_img4'
+						/>
+						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</div>
+				</div>
+				<div className='ser_license max-w-[1560px]'>
+					<div className='ser_license_left'>
+						<img
+							src='	https://www.dezinfeksiyatashkent.uz/assets/cleanT-f1a5f564.jpg'
+							alt='ser_license_left_img'
+						/>
+					</div>
+					<div className='ser_license_right'>
+						<img
+							src='https://www.dezinfeksiyatashkent.uz/assets/d3icons-b8f1c170.svg'
+							alt='ser_license_right_img'
+						/>
+						<h1 className='ser_license_right_title'>
+							{t('serves-type.ser-license-right-title')}
+						</h1>
+						<button className='w-[200px] h-[60px] mt-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</div>
+				</div>
+			</section>
+			<section className='faq_flex mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'>
+				<h1>{t('faq')}</h1>
+				<div className='faq_right'>
+					<Accordion items={items} />
+				</div>
+			</section>
+			<section className='contact border-2 border-red-500 mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'>
+				<div className='contact_left'>
+					<form action=''>
+						<label htmlFor='fname' className='contact_title'>
+							{t('contact.contact-title')}
+						</label>
+						<br />
+						<input
+							className='card_left_input'
+							type='text'
+							id='fname'
+							name='fname'
+							placeholder={t('contact.contact-name')}
+						/>
+						<br />
+						<input
+							className='card_left_input'
+							type='tel'
+							id='telnumber'
+							name='telnumber'
+							placeholder='+998 90 123 45 67'
+							pattern='^\+998 \d{2} \d{3} \d{2} \d{2}$'
+							required
+						/>
+						<br />
+						<input
+							className='card_left_btn'
+							type='button'
+							value={t('contact.contact-btn')}
+						/>
+					</form>
+				</div>
+				<div className='contact_right'>
+					<img
+						src='	https://www.dezinfeksiyatashkent.uz/assets/contact-a5f11f68.png'
+						alt='contact_img'
+					/>
+				</div>
 			</section>
 		</section>
 	)
