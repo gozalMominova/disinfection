@@ -286,9 +286,9 @@ const Hero = () => {
 			</section>
 			<section
 				id='faq'
-				className='mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'
+				className='mt-[100px] max-w-[1560px] mx-auto z-1 px-[15px]'
 			>
-				<div className='faq_flex'>
+				<div className='faq_flex flex justify-between'>
 					<h1>{t('faq')}</h1>
 					<div className='faq_right'>
 						<Accordion items={items} />
