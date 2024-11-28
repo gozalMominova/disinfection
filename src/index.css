@@ -5,6 +5,9 @@
 body {
 	@apply font-unbounded;
 }
+html {
+	scroll-behavior: smooth;
+}
 /* About boshlandi---------------------------------------- */
 .about_top_card {
 	display: flex;
@@ -374,4 +377,7 @@ footer {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+}
+.card_left_btn:active {
+	transform: scale(0.98);
 }

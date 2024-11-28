@@ -1,14 +1,14 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Highlights from "./components/Highlights";
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
 const App = () => {
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Highlights />
-    </main>
-  );
-};
+	return (
+		<main>
+			<Navbar />
+			<Hero />
+			<Footer />
+		</main>
+	)
+}
 
-export default App;
+export default App

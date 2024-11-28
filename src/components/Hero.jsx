@@ -27,7 +27,10 @@ const Hero = () => {
 	]
 	return (
 		<section className='main_box'>
-			<section className='home border-2 border-red-500 mt-[213px] max-w-[1560px] mx-auto z-1 flex  justify-between items-center px-[15px]'>
+			<section
+				id='main'
+				className='home mt-[213px] max-w-[1560px] mx-auto z-1 flex  justify-between items-center px-[15px]'
+			>
 				<div className='home_left max-w-[780px]'>
 					<h1
 						data-aos='fade-right'
@@ -43,9 +46,11 @@ const Hero = () => {
 						src='https://www.dezinfeksiyatashkent.uz/assets/diz-main-ee209cbc.png'
 						alt='home-img2'
 					/>
-					<button className='w-[200px] h-[60px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-						{t('boglanish')}
-					</button>
+					<a href='#contact'>
+						<button className='w-[200px] h-[60px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+							{t('boglanish')}
+						</button>
+					</a>
 				</div>
 				<div className='home_right max-w-[750px] h-[700px]'>
 					<img
@@ -56,7 +61,10 @@ const Hero = () => {
 					/>
 				</div>
 			</section>
-			<section className='about  border-2 border-red-500 mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
+			<section
+				id='about'
+				className='about  mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'
+			>
 				<div className='about_top'>
 					<h1 className='about_top_title'>{t('biz-haqimizda')}</h1>
 					<div className='about_top_card'>
@@ -64,9 +72,9 @@ const Hero = () => {
 							<svg
 								stroke='currentColor'
 								fill='currentColor'
-								stroke-width='0'
+								strokeWidth='0'
 								viewBox='0 0 16 16'
-								class='about_card_icon'
+								className='about_card_icon'
 								height='1em'
 								width='1em'
 								xmlns='http://www.w3.org/2000/svg'
@@ -80,9 +88,9 @@ const Hero = () => {
 							<svg
 								stroke='currentColor'
 								fill='currentColor'
-								stroke-width='0'
+								strokeWidth='0'
 								viewBox='0 0 256 256'
-								class='about_card_icon'
+								className='about_card_icon'
 								height='1em'
 								width='1em'
 								xmlns='http://www.w3.org/2000/svg'
@@ -100,9 +108,9 @@ const Hero = () => {
 							<svg
 								stroke='currentColor'
 								fill='currentColor'
-								stroke-width='0'
+								strokeWidth='0'
 								viewBox='0 0 24 24'
-								class='about_card_icon'
+								className='about_card_icon'
 								height='1em'
 								width='1em'
 								xmlns='http://www.w3.org/2000/svg'
@@ -120,14 +128,19 @@ const Hero = () => {
 						<div className='about_bottom_wrap'>
 							<h1>{t('about.about-bottom-title')}</h1>
 							<p>{t('about.about-bottom-text')}</p>
-							<button className='w-[200px] h-[60px] mt-[90px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-								{t('boglanish')}
-							</button>
+							<a href='#contact'>
+								<button className='w-[200px] h-[60px] mt-[90px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+									{t('boglanish')}
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section className='serves border-2 border-red-500 mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
+			<section
+				id='serv'
+				className='serves mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'
+			>
 				<h1 className='serves_title'>{t('xizmatlar')}</h1>
 				<p className='serves_info'>{t('serves.serves-info')}</p>
 				<div className='serves_card'>
@@ -167,7 +180,7 @@ const Hero = () => {
 					</div>
 				</div>
 			</section>
-			<section className='serves_type serves border-2 border-red-500 mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
+			<section className='serves_type serves mt-[53px] max-w-[1560px] mx-auto z-1 px-[15px]'>
 				<h1 className='serves_type_title'>
 					{t('serves-type.serves-type-title')}
 				</h1>
@@ -181,9 +194,11 @@ const Hero = () => {
 							src='https://www.dezinfeksiyatashkent.uz/assets/klopi-6c1f42ef.jpg'
 							alt='serves_type_card_img1'
 						/>
-						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-							{t('boglanish')}
-						</button>
+						<a href='#contact'>
+							<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</a>
 					</div>
 					<div className='serves_type_card'>
 						<h1 className='type_card_name'>
@@ -194,9 +209,11 @@ const Hero = () => {
 							src='https://www.dezinfeksiyatashkent.uz/assets/tarakan-d8b430bd.jpg'
 							alt='serves_type_card_img2'
 						/>
-						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-							{t('boglanish')}
-						</button>
+						<a href='#contact'>
+							<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</a>
 					</div>
 					<div className='serves_type_card'>
 						<h1 className='type_card_name'>
@@ -207,9 +224,11 @@ const Hero = () => {
 							src='https://www.dezinfeksiyatashkent.uz/assets/skarpion-6902a7a9.jpg'
 							alt='serves_type_card_img3'
 						/>
-						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-							{t('boglanish')}
-						</button>
+						<a href='#contact'>
+							<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</a>
 					</div>
 					<div className='serves_type_card'>
 						<h1 className='type_card_name'>
@@ -220,9 +239,11 @@ const Hero = () => {
 							src='https://www.dezinfeksiyatashkent.uz/assets/grizuni-de8c9315.jpg'
 							alt='serves_type_card_img4'
 						/>
-						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-							{t('boglanish')}
-						</button>
+						<a href='#contact'>
+							<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</a>
 					</div>
 					<div className='serves_type_card'>
 						<h1 className='type_card_name'>
@@ -233,9 +254,11 @@ const Hero = () => {
 							src='	https://www.dezinfeksiyatashkent.uz/assets/bloxi-7e06d020.jpg'
 							alt='serves_type_card_img4'
 						/>
-						<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-							{t('boglanish')}
-						</button>
+						<a href='#contact'>
+							<button className='type_card_btn w-[190px] h-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</a>
 					</div>
 				</div>
 				<div className='ser_license max-w-[1560px]'>
@@ -253,55 +276,67 @@ const Hero = () => {
 						<h1 className='ser_license_right_title'>
 							{t('serves-type.ser-license-right-title')}
 						</h1>
-						<button className='w-[200px] h-[60px] mt-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
-							{t('boglanish')}
-						</button>
+						<a href='#contact'>
+							<button className='w-[200px] h-[60px] mt-[50px] rounded-[25px] bg-[#2137FB] text-[#fff] px-[10px] py-[2px] ml-[0px] font-medium text-[25px] hover:bg-blue-800  transform active:scale-95 transition-transform duration-150 transition-all duration-300 ease-in-out flex justify-center items-center'>
+								{t('boglanish')}
+							</button>
+						</a>
 					</div>
 				</div>
 			</section>
-			<section className='faq_flex mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'>
-				<h1>{t('faq')}</h1>
-				<div className='faq_right'>
-					<Accordion items={items} />
+			<section
+				id='faq'
+				className='mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'
+			>
+				<div className='faq_flex'>
+					<h1>{t('faq')}</h1>
+					<div className='faq_right'>
+						<Accordion items={items} />
+					</div>
 				</div>
 			</section>
-			<section className='contact border-2 border-red-500 mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'>
-				<div className='contact_left'>
-					<form action=''>
-						<label htmlFor='fname' className='contact_title'>
-							{t('contact.contact-title')}
-						</label>
-						<br />
-						<input
-							className='card_left_input'
-							type='text'
-							id='fname'
-							name='fname'
-							placeholder={t('contact.contact-name')}
+			<section
+				id='contact'
+				className=' mt-[100px] max-w-[1560px] mx-auto z-1 flex  justify-between px-[15px]'
+			>
+				<div className='contact  pt-[60px] w-[1560px]'>
+					<div className='contact_left'>
+						<form action=''>
+							<label htmlFor='fname' className='contact_title'>
+								{t('contact.contact-title')}
+							</label>
+							<br />
+							<input
+								className='card_left_input'
+								type='text'
+								id='fname'
+								name='fname'
+								placeholder={t('contact.contact-name')}
+							/>
+							<br />
+							<input
+								className='card_left_input'
+								type='tel'
+								id='telnumber'
+								name='telnumber'
+								placeholder='+998 90 123 45 67'
+								pattern='^\+998 \d{2} \d{3} \d{2} \d{2}$'
+								required
+							/>
+							<br />
+							<input
+								className='card_left_btn'
+								type='button'
+								value={t('contact.contact-btn')}
+							/>
+						</form>
+					</div>
+					<div className='contact_right'>
+						<img
+							src='	https://www.dezinfeksiyatashkent.uz/assets/contact-a5f11f68.png'
+							alt='contact_img'
 						/>
-						<br />
-						<input
-							className='card_left_input'
-							type='tel'
-							id='telnumber'
-							name='telnumber'
-							placeholder='+998 90 123 45 67'
-							pattern='^\+998 \d{2} \d{3} \d{2} \d{2}$'
-							required
-						/>
-						<br />
-						<input
-							className='card_left_btn'
-							type='button'
-							value={t('contact.contact-btn')}
-						/>
-					</form>
-				</div>
-				<div className='contact_right'>
-					<img
-						src='	https://www.dezinfeksiyatashkent.uz/assets/contact-a5f11f68.png'
-						alt='contact_img'
-					/>
+					</div>
 				</div>
 			</section>
 		</section>
